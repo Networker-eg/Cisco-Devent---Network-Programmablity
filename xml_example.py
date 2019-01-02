@@ -4,7 +4,7 @@ xml_example = open('xml_example.xml').read()
 print(xml_example)
 xml_dict = xmltodict.parse(xml_example)
 int_name = xml_dict["interface"]["name"]
-intname
+int_name
 
 
 ***xml_example.xml file is as below***
