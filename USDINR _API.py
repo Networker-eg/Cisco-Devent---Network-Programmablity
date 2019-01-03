@@ -1,4 +1,4 @@
-Python Code:::
+Python Code in JSON:::
 import requests
 import json
 
@@ -9,6 +9,25 @@ print(b)
 int_name = b[ "quotes"]["USDINR"]
 print('\n\n\n The value of USD to INR is : ')
 print(int_name)
+
+
+
+
+
+Python Code in yaml :::
+import requests
+import yaml
+url = 'http://www.apilayer.net/api/live?access_key=d56fb60fea3e8d42481a382a4d598ce8&format=1'
+a = requests.get(url) 
+b=a.yaml()
+print(b)
+int_name = b[ "quotes"]["USDINR"]
+print('\n\n\n The value of USD to INR is : ')
+print(int_name)
+
+
+
+
 
 
 API Access Key:
